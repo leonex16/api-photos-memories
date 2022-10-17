@@ -1,0 +1,28 @@
+{
+  "name": "api-photos-memories",
+  "module": "index.ts",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "bun run ./src/index.ts",
+    "test": "bun wiptest src/"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "bun-types": "^0.2.0",
+    "semistandard": "^16.0.1"
+  },
+  "dependencies": {
+    "glob": "^8.0.3",
+    "hono": "^2.2.5"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "semistandard",
+      "plugin:@typescript-eslint/recommended"
+    ]
+  }
+}
